@@ -1,3 +1,6 @@
+# Note
+You'll need to add `GIPHY_API_TOKEN=sometokenhere` to the .env file.
+
 # Objective
 
 To demonstrate your OOP and unit/integration testing skills.
