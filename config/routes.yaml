@@ -1,0 +1,7 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+gifsearch:
+    path: /gifsearch
+    controller: App\Controller\ShowgifController::index

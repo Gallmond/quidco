@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Show a cool and fun gif</title>
+    </head>
+    <body>
+
+        <form>
+
+            <label for="search_term">Search Term</label>
+            <input type="text" placeholder="cats" name="search_term" id="search_term">
+            <button type="submit">Search</button>
+
+        </form>
+
+        {% if gif_info is defined %}
+            <img src="{{ gif_info.url }}" width="{{ gif_info.width }}" height="{{ gif_info.height }}">
+        {% endif %}
+
+        {% if error_info is defined %}
+            <p>{{ error_info }}</p>
+        {% endif %}
+
+
+    </body>
+</html>
